@@ -1,0 +1,220 @@
+
+
+* {
+
+    box-sizing: border-box;
+}
+
+
+body {
+
+    margin: 0;
+    font-size: 1rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #5A5A5A;
+    text-align: center;
+}
+
+h1 {
+
+    font-weight: 300;
+    color: #FFFFFF;
+    font-size: 2.25rem;
+    margin: 0;
+}
+
+h1 + p {
+ 
+    color: #F18119;
+    font-weight: 900;
+    font-size: 1.3125rem;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+h2 {
+
+    font-size: 1.3125rem;
+    margin: 0;
+}
+
+.mini {
+
+    font-size: 0.625rem;
+    font-weight: 900;
+    color: #F18119;
+    letter-spacing: 1px;
+    border-top: 5px solid #F18119;
+    margin: 0;
+    border-image: linear-gradient(to left, #ff713b, #ffa51d) 1;
+}
+
+.intro {
+
+    padding: 0 .5em 2em;
+    background-image: url(bbq.jpg);
+    background-color: #404040;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.intro > *,
+.main > * {
+
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.email-box{
+
+    width: 80%;
+    max-width: 300px;
+}
+
+input, .btn {
+
+    text-align: center;
+    border: 1px solid #818181;
+    border-radius: 7px;
+    width: 15.8125em;
+    height: 2.3125em;
+}
+
+input {
+
+    margin-bottom: .75em;
+    font-family: inherit;
+    padding: .30em;
+    transform: scale(1);
+    transition: transform 250ms;
+    
+}
+
+input:focus {
+
+    transform: scale(1.1);
+
+}
+
+
+.btn {
+
+    
+    display: inline-block;
+    border: 0;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+
+}
+
+.btn-prim {
+
+
+    background-image: linear-gradient(270deg, #FF713B 0%, #FFA51D 100%);
+    color: #FFFFFF;
+    transition: color 250ms;
+    transform: scale(1);
+    transition: transform 250ms;
+   
+}
+
+.btn-prim:hover,
+.btn-prim:focus {
+
+    color: black;
+    transform: scale(1.1);
+}
+
+
+
+
+.mini {
+
+    order: -2;
+}
+
+.main {
+
+    padding: 2em 1em;
+}
+
+.bcom {
+
+    color: #404040;
+    font-weight: 900;
+}
+
+.reg {
+
+    color: #F18119;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.mini2 {
+
+    font-size: 0.625rem;
+    letter-spacing: 1px;
+}
+
+.intro, .main {
+
+    width: 60%;
+    min-height: 40vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+@media (min-width: 520px) {
+
+ body {
+    font-size: 1.125rem;
+    display: flex;
+    flex-direction: row;
+ }
+  
+ h1 {
+
+    font-size: 3.5rem;
+ }
+
+ h2, h1 + p {
+
+    font-size: 1.75rem;
+ }
+
+ .mini {
+
+    font-size: 0.625rem;
+ }
+
+ .mini2 {
+
+    font-size: 0.625rem;
+ }
+
+.intro, .main {
+
+    width: 50%;
+    min-height: 100vh;
+}
+
+.main {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+}
